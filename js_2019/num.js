@@ -243,12 +243,15 @@ $(window).scroll(function () {
   var _offset = t.offset();
   var _top = _offset.top;
   var _left = _offset.left;
-
-  if ($(window).scrollTop() > (_top) & $(window).scrollTop() < (_top+200)) {
-    t.addClass("active");
-    num(t);
+  if ($(window).scrollTop() > (_top) & $(window).scrollTop() < (_top+700)) {
+   if( !t.hasClass("active")){
+		  t.addClass("active");
+			 num(t);
+	 }
+   
     return !1;
   } else {
+		 t.removeClass("active");
     return !1;
   }
 
