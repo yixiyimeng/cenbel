@@ -352,6 +352,7 @@ select::-ms-expand {
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
+
 .banner .swiper-pagination-bullet {
 	width: 50px;
 	height: 2px;
@@ -359,9 +360,11 @@ select::-ms-expand {
 	opacity: 1;
 	border-radius: 0;
 }
-.banner .swiper-pagination-bullet-active{
+
+.banner .swiper-pagination-bullet-active {
 	background: #005da2;
 }
+
 .part .title {
 	font-size: 42px;
 	color: #333;
@@ -373,6 +376,7 @@ select::-ms-expand {
 	color: #999;
 	margin-top: 15px;
 }
+
 .part1 {
 	background: #f6f6f6;
 	height: 818px;
@@ -390,7 +394,11 @@ select::-ms-expand {
 	width: 46%;
 	position: relative;
 }
-
+.part1>div.imgbox>div{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
 .part1>div.imgbox img {
 	position: absolute;
 	right: 134px;
@@ -484,6 +492,75 @@ select::-ms-expand {
 
 }
 
+.part1>div.txtbox .tab-bd ul li a>div {
+	position: relative;
+	z-index: 99;
+	text-align: center;
+	color: #333;
+	font-size: 16px;
+	padding-top: 35px;
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i {
+	height: 38px;
+	width: 100%;
+	background: no-repeat center bottom;
+	margin: 0 auto 20px;
+	display: block;
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon1 {
+	background-image: url(../img_2019/icon14.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon2 {
+	background-image: url(../img_2019/icon15.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon3 {
+	background-image: url(../img_2019/icon16.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon4 {
+	background-image: url(../img_2019/icon17.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon5 {
+	background-image: url(../img_2019/icon18.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon6 {
+	background-image: url(../img_2019/icon19.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon7 {
+	background-image: url(../img_2019/icon20.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon8 {
+	background-image: url(../img_2019/icon21.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon9 {
+	background-image: url(../img_2019/icon22.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon10 {
+	background-image: url(../img_2019/icon23.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon11 {
+	background-image: url(../img_2019/icon24.png);
+}
+
+.part1>div.txtbox .tab-bd ul li a>div i.icon12 {
+	background: no-repeat center center;
+	background-image: url(../img_2019/more.png);
+	height: 10px;
+	margin-top: 30px;
+
+}
+
 .part2 {
 	color: #fff;
 	text-align: center;
@@ -493,7 +570,8 @@ select::-ms-expand {
 	height: 832px;
 }
 
-.part2 .title,.part2 .subtitle {
+.part2 .title,
+.part2 .subtitle {
 	color: #fff;
 }
 

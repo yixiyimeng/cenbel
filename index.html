@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css_2019/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css_2019/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css_2019/aos.css"/>
 		<link rel="stylesheet" type="text/css" href="css_2019/base.css" />
 	</head>
 	<body>
@@ -79,10 +80,11 @@
 		</div>
 		<!-- 我们能做什么 -->
 		<section class="part1 part">
-			<div class="imgbox">
-				<img src="img_2019/img1.png" alt="">
+			<div class="imgbox" >
+				<div aos="fade-right">
+				<img src="img_2019/img1.png" alt="" ></div>
 			</div>
-			<div class="txtbox">
+			<div class="txtbox" aos="fade-left">
 				<div class="title">我们能做什么？</div>
 				<div class="subtitle">只要你想得到，我们就能帮你实现</div>
 				<div class="tab">
@@ -98,22 +100,22 @@
 					<div class="tab-bd">
 						<div>
 							<ul class="clearfix">
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
+								<li><a href=""><div><i class="icon1"></i><p>官网建设</p></div></a></li>
+								<li><a href=""><div><i class="icon2"></i><p>品牌网站</p></div></a></li>
+								<li><a href=""><div><i class="icon3"></i><p>外贸网站</p></div></a></li>
+								<li><a href=""><div><i class="icon4"></i><p>商城建设</p></div></a></li>
 							</ul>
 							<ul class="clearfix">
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
+								<li><a href=""><div><i class="icon5"></i><p>供求网站</p></div></a></li>
+								<li><a href=""><div><i class="icon6"></i><p>视频网站</p></div></a></li>
+								<li><a href=""><div><i class="icon7"></i><p>在线教育</p></div></a></li>
+								<li><a href=""><div><i class="icon8"></i><p>社区网站</p></div></a></li>
 							</ul>
 							<ul class="clearfix">
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
+								<li><a href=""><div><i class="icon9"></i><p>门户网站</p></div></a></li>
+								<li><a href=""><div><i class="icon10"></i><p>众筹网站</p></div></a></li>
+								<li><a href=""><div><i class="icon11"></i><p>云购网站</p></div></a></li>
+								<li><a href=""><div><i class="icon12"></i></div></a></li>
 							</ul>
 
 						</div>
@@ -157,7 +159,7 @@
 		<section class="part3 part">
 			<div class="title">项目案例</div>
 			<div class="subtitle">为客户创造与传递品牌价值是我们的最终使命</div>
-			<div class="w1300">
+			<div class="w1300 " aos="fade-up">
 				<div class="tab">
 					<div class="tab-hd">
 						<ul>
@@ -360,7 +362,7 @@
 			</div>
 			<div class="subtitle">为特定的行业制定特别的方案，方显定制的优越</div>
 			<div class="mt60">
-				<div class="w1300 tab clearfix">
+				<div class="w1300 tab clearfix" aos="fade-up">
 					<div class="tab-hd">
 						<a href="" class="active">展示型网站建设</a>
 						<a href="">商城网站建设</a>
@@ -418,7 +420,7 @@
 				我们怎么做
 			</div>
 			<div class="subtitle">专业规范，用心服务</div>
-			<div class="w1300 clearfix mt60">
+			<div class="w1300 clearfix mt60" aos="zoom-in">
 				<div class="modbox-item active">
 					<div class="leftpart">
 						<div class="no">01</div>
@@ -475,7 +477,7 @@
 			<div class="subtitle">
 				我们已和众多知名企业建立了长期的合作关系
 			</div>
-			<div class="w1300 clearfix">
+			<div class="w1300 clearfix" aos="fade-up">
 				<div class="tab-hd">
 					<div>
 						<div class="num">17+</div>
@@ -492,7 +494,7 @@
 				</div>
 				<div class="tab-bd">
 					<ul class="clearfix">
-						<li><a href=""><i></i></a></li>
+						<li><a href=""><i style="background-image: url(img_2019/demo/logo.png);"></i></a></li>
 						<li><a href=""><i></i></a></li>
 						<li><a href=""><i></i></a></li>
 						<li><a href=""><i></i></a></li>
@@ -519,7 +521,7 @@
 		<!-- 新闻 -->
 		<section class="part7 part">
 			<div class="title">新闻动态</div>
-			<div class="w1300">
+			<div class="w1300" aos="zoom-in">
 				<div class="tab">
 					<div class="tab-hd">
 						<ul>
@@ -629,7 +631,12 @@
 <script src="js_2019/swiper.min.js"></script>
 <script src="js_2019/swiper.animate.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js_2019/num.js" type="text/javascript" charset="utf-8"></script>
+<script src="js_2019/aos.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
+	AOS.init({
+			easing: 'ease-out-back',
+			duration: 1000
+		});
 
 </script>
 <script type="text/javascript">
@@ -646,6 +653,9 @@
 			$('.header .dropdown-menu .dropdown-menu-wrap').slideUp(300);
 			}
 		});
+		$('.part5 .modbox-item').hover(function(){
+			$(this).addClass('active').siblings('.active').removeClass('active')
+		})
 	});
 	var swiper = new Swiper('.swiper-container', {
 		loop: true,
