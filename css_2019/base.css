@@ -242,6 +242,7 @@ select::-ms-expand {
 
 .header ul.nav li.tel {
 	color: #005da2;
+	margin-left: 34px;
 }
 
 .header ul.nav li.tel img,
@@ -316,7 +317,7 @@ select::-ms-expand {
 	content: '';
 	position: absolute;
 	height: 1px;
-	background: #bbb;
+	background: rgba(255,255,255,.7);
 	width: 200px;
 	top: 50%;
 }
@@ -421,7 +422,7 @@ select::-ms-expand {
 }
 
 .footer .copyright a {
-	color: #005da2;
+	color: #3a9be3;
 }
 .banner .swiper-pagination-bullet {
 	width: 50px;

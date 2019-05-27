@@ -50,8 +50,7 @@
 .banner .swiper-slide1 .txt .line {
 	width: 866px;
 	height: 1px;
-	background: #fff;
-	opacity: .3;
+	background: rgba(255,255,255,.3);
 	margin: 48px auto;
 }
 
@@ -779,6 +778,7 @@
 .part5 .w1300>div .leftpart .no {
 	font-size: 50px;
 	color: #ddd;
+	font-family: 'arial';
 }
 
 .part5 .w1300>div .leftpart i {
@@ -841,7 +841,7 @@
 
 .part5 .w1300>div .rightpart a:hover {
 	border: 1px solid #fff;
-	color: #0092FF;
+	color: #005da2;
 }
 
 .part5 .w1300>div .rightpart a i {
@@ -1066,6 +1066,8 @@
 	width: 50%;
 	display: block;
 	float: left;
+	height: 100px;
+	width: 300px;
 }
 
 .part7 .tab .tab-bd ul li a .newsinfo .name {
