@@ -333,7 +333,7 @@ select::-ms-expand {
 
 .footer .linklist {
 	padding-bottom: 50px;
-	border-bottom: 1px solid #272728;
+	border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
 .footer .linklist dl {

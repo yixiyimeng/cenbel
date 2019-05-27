@@ -680,18 +680,23 @@
 .part4 .tab-bd .knowmore {
 	width: 150px;
 	height: 54px;
-	line-height: 54px;
 	text-align: center;
 	color: #fff;
 	display: block;
 	border-radius: 50px;
-	border: 2px solid rgba(255, 255, 255, .5);
 	margin: 60px 0 50px;
 	transition: all .3s;
 	position: relative;
 	overflow: hidden;
+	line-height: 50px;
 }
-
+.part4 .tab-bd .knowmore>span{
+	display: block;
+	border-radius: 50px;
+	border: 2px solid rgba(255, 255, 255, .5);
+	position: relative;
+	
+}
 .part4 .tab-bd .knowmore:before {
 	position: absolute;
 	z-index: -1;
@@ -708,7 +713,9 @@
 	color: #005da2;
 	transition: all .3s;
 }
-
+.part4 .tab-bd .knowmore:hover>span{
+	border: 2px solid rgba(255, 255, 255, 1);
+}
 .part4 .tab-bd .knowmore:hover:before {
 	width: 100%;
 }
