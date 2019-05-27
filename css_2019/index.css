@@ -15,7 +15,9 @@
 	right: 0;
 	transition: top 4.5s;
 }
-
+.banner .swiper-slide1 .imgbox  img{
+	width: 100%;
+}
 .banner .swiper-slide1.active .imgbox {
 	top: -200px;
 }
@@ -555,9 +557,11 @@
 	float: left;
 	background: url(../img_2019/tabbg.png) no-repeat center center;
 	height: 760px;
-	padding-top: 215px;
+	/* padding-top: 215px; */
 }
-
+.part4 .tab-hd>div{
+	width: 100%;
+}
 .part4 .tab-hd a {
 	display: block;
 	line-height: 80px;

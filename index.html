@@ -477,11 +477,12 @@
 			<div class="subtitle">为特定的行业制定特别的方案，方显定制的优越</div>
 			<div class="mt60">
 				<div class="w1300 tab clearfix" aos="fade-up">
-					<div class="tab-hd">
-						<a href="javascript:;" class="active tab-link">展示型网站建设</a>
+					<div class="tab-hd flex flex-align-center">
+						<div><a href="javascript:;" class="active tab-link">展示型网站建设</a>
 						<a href="javascript:;" class="tab-link">商城网站建设</a>
 						<a href="javascript:;" class="tab-link">B2B平台开发</a>
 						<a href="javascript:;" class="tab-link">在线教育平台开发</a>
+						<a href="javascript:;" class="tab-link">定制开发</a></div>
 					</div>
 					<div class="tab-bd">
 						<div class="tab-item">
@@ -814,14 +815,26 @@
 
 		$('.header .dropdown-menu .dropdown-menu-wrap').width($('.header .dropdown-menu .dropdown-menu-wrap>div').length *
 			235 + ($('.header .dropdown-menu .dropdown-menu-wrap>div').length - 1) * 140);
-
+			
+			var bannerheight=$(window).width()/1920*870;
+			$('.banner .swiper-slide').height(bannerheight);
+			$('.banner .swiper-slide.swiper-slide1 .txt').css({'top':($(window).width()/1920*205)+'px'});
+			$('.banner .swiper-slide.swiper-slide2 .txt').css({'top':($(window).width()/1920*260)+'px'});
+			$('.banner .swiper-slide.swiper-slide2 .txt').css({'top':($(window).width()/1920*245)+'px'})
+$(window).resize(function(){
+	var bannerheight=$(window).width()/1920*870;
+	$('.banner .swiper-slide').height(bannerheight);
+	$('.banner .swiper-slide.swiper-slide1 .txt').css({'top':($(window).width()/1920*205)+'px'});
+	$('.banner .swiper-slide.swiper-slide2 .txt').css({'top':($(window).width()/1920*260)+'px'});
+	$('.banner .swiper-slide.swiper-slide2 .txt').css({'top':($(window).width()/1920*245)+'px'});
+})
 	});
 	var swiper = new Swiper('.swiper-container', {
-		loop: true,
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-		},
+// 		loop: true,
+// 		autoplay: {
+// 			delay: 3000,
+// 			disableOnInteraction: false,
+// 		},
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true
@@ -830,15 +843,19 @@
 			init: function() {
 				swiperAnimateCache(this); //隐藏动画元素 
 				swiperAnimate(this); //初始化完成开始动画
-				this.slides.eq(this.activeIndex).addClass('active');
+				// this.slides.eq(this.activeIndex).addClass('active');
+				$(this.slides.eq(this.activeIndex)).find('.imgbox').animate({'top':($(window).width()/1920*-200)+'px'},500)
 			},
 			slideChangeTransitionEnd: function() {
 				swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
 				// $(this).addClass('active')
 				if (this.realIndex == 0) {
-					this.slides.eq(this.activeIndex).addClass('active');
+					
+					// this.slides.eq(this.activeIndex).addClass('active');
+						$(this.slides.eq(this.activeIndex)).find('.imgbox').animate({'top':($(window).width()/1920*-200)+'px'},500)
 				} else {
-					this.slides.removeClass('active');
+					// this.slides.removeClass('active');
+						$('.swiper-container .swiper-slide').find('.imgbox').css({'top':0})
 				}
 			}
 		}

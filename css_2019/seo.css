@@ -77,11 +77,22 @@
 	font-size: 20px;
 	color: #333
 }
-
+.seopart1 ul li a .imgbox{
+	overflow: hidden;
+	width: 252px;
+	height: 212px;
+}
 .seopart1 ul li a:hover p {
 	color: #005da2
 }
-
+.seopart1 ul li a .imgbox img{
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	}
+.seopart1 ul li a:hover .imgbox img{
+	transform: scale(1.1,1.1);
+}
 .seopart .parttitle {
 	position: absolute;
 	font-size: 42px;

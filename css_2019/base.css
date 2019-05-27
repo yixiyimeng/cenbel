@@ -299,7 +299,7 @@ select::-ms-expand {
 
 /* 底部 */
 .footer {
-	background: #1b1b1c;
+	background: #005da2;
 	color: #fff;
 	padding: 80px 0 25px;
 }
@@ -345,7 +345,7 @@ select::-ms-expand {
 }
 
 .footer .linklist dl a {
-	color: #888;
+	color: #fff;
 	font-size: 14px;
 }
 .footer .linklist dl a:hover{
@@ -411,7 +411,7 @@ select::-ms-expand {
 
 .footer .copyright {
 	text-align: center;
-	color: #888;
+	/* color: #888; */
 	font-size: 14px;
 }
 
