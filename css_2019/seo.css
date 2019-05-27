@@ -14,10 +14,18 @@
 	width: 1300px;
 	left: 50%;
 	margin-left: -650px;
-	padding-top: 90px;
 	top: 0;
 	text-align: center;
 	font-size: 30px;
+	padding: 75px 0  0;
+}
+.banner .swiper-slide.swiper-slide1 .txt>div{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.banner .swiper-slide.swiper-slide1 .txt>div+div{
+	margin-left: 100px;
 }
 .banner .swiper-slide.swiper-slide1 .txt .ft60{
 	font-size: 60px;
@@ -25,15 +33,65 @@
 	margin-bottom: 48px;
 }
 .banner .swiper-slide.swiper-slide1 .txt span+span{
-	margin-left: 47px;
+	margin-left:18px;
 }
-.banner .swiper-slide.swiper-slide1 .txt p:last-child{
+.banner .swiper-slide.swiper-slide1 .txt p.btn{
 	font-size: 18px;
 	width: 222px;
 	height: 45px;
 	line-height: 45px;
-	margin: 43px auto 0;
+	margin: 43px 0 0;
 	border: 1px solid #fff;
+	text-align: center
+}
+.banner .swiper-slide.swiper-slide1 .txt p img{
+	margin-right: 10px;
+}
+.banner .swiper-slide.swiper-slide1 .txt p img,.banner .swiper-slide.swiper-slide1 .txt p span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.banner .swiper-slide.swiper-slide2 .txt{
+	color: #fff;text-align: center;
+	width: 1300px;
+	left: 50%;
+	margin-left: -650px;
+	padding-top:86px;
+	top: 0;
+	position: relative;
+}
+.banner .swiper-slide.swiper-slide2 .txt img{
+	display: block;
+	margin: 36px auto 42px;
+}
+.banner .swiper-slide.swiper-slide2 .txt ul li{
+	float: left;
+	width: 33.33%;
+	font-size: 16px;
+	position: relative;
+}
+.banner .swiper-slide.swiper-slide2 .txt ul li+li:before{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 97px;
+	background: rgba(255,255,255,.3);
+	position: absolute;
+	left: 0;
+	top: 4px;
+	
+}
+.banner .swiper-slide.swiper-slide2 .txt ul li p:first-child{
+	font-size: 30px;
+	color: #35e5ff;
+	margin-bottom: 20px;
+}
+.banner .swiper-slide.swiper-slide2 .txt ul li p:last-child{
+	line-height: 28px;
+}
+.banner .swiper-slide.swiper-slide2 .txt ul li p i{
+	font-style: normal;
+	color: #35e5ff;
 }
 .seopart {
 	padding-top: 80px;
@@ -118,8 +176,11 @@
 
 .seopart2 .modbox-item {
 	position: absolute;
+	transition: all .3s;
 }
-
+.seopart2 .modbox-item:hover{
+	transform: translateY(-10%);
+}
 .seopart2 .modbox-item img {
 	float: left;
 }
