@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css_2019/animate.min.css" />
 		<link rel="stylesheet" type="text/css" href="css_2019/aos.css" />
 		<link rel="stylesheet" type="text/css" href="css_2019/base.css" />
+		<link rel="stylesheet" type="text/css" href="css_2019/index.css"/>
 	</head>
 	<body>
 		<!--頭部  -->
@@ -778,6 +779,7 @@
 <script src="js_2019/swiper.animate.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js_2019/num.js" type="text/javascript" charset="utf-8"></script>
 <script src="js_2019/aos.js" type="text/javascript" charset="utf-8"></script>
+<script src="js_2019/index.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	AOS.init({
 		easing: 'ease-out-expo',
@@ -790,16 +792,7 @@
 	$(function() {
 		var t = $(".part2");
 		num(t);
-		$('.dropdown-menu').hover(function() {
-			event.stopPropagation();
-			$('.header .dropdown-menu .dropdown-menu-wrap').slideToggle(300);
-		});
-		$(document).click(function(event) {
-			var _con = $('.header .dropdown-menu'); // 设置目标区域
-			if (!_con.is(event.target) && _con.has(event.target).length === 0) { // Mark 1
-				$('.header .dropdown-menu .dropdown-menu-wrap').slideUp(300);
-			}
-		});
+		
 		$('.part5 .modbox-item').hover(function() {
 			$(this).addClass('active').siblings('.active').removeClass('active')
 		});
