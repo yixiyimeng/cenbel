@@ -829,7 +829,8 @@
 }
 
 .part5 .w1300>div .rightpart a:hover {
-	border: 1px solid #0092FF;
+	border: 1px solid #fff;
+	color: #0092FF;
 }
 
 .part5 .w1300>div .rightpart a i {
@@ -841,7 +842,7 @@
 	display: block;
 	z-index: 0;
 	transition: all .3s;
-	background: #0092FF;
+	background: #fff;
 }
 
 .part5 .w1300>div .rightpart a span {
@@ -1100,8 +1101,7 @@
 	display: inline-block;
 	height: 54px;
 	width: 160px;
-	line-height: 54px;
-	border: 2px solid #005da2;
+	line-height: 50px;
 	border-radius: 50px;
 	position: relative;
 	overflow: hidden;
@@ -1122,6 +1122,8 @@
 .more span {
 	position: relative;
 	z-index: 1;
+	border: 2px solid #005da2;
+	display: block;border-radius: 50px;
 }
 
 .more:hover {
