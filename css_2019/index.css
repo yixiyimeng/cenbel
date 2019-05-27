@@ -15,9 +15,9 @@
 	right: 0;
 	transition: top 4.5s;
 }
-.banner .swiper-slide1 .imgbox  img{
+/* .banner .swiper-slide1 .imgbox  img{
 	width: 100%;
-}
+} */
 .banner .swiper-slide1.active .imgbox {
 	top: -200px;
 }
