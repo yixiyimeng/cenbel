@@ -758,6 +758,7 @@
 	height: 360px;
 	min-width: 254px;
 	box-sizing: border-box;
+	min-width: 4em;
 
 }
 

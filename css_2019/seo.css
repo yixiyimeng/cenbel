@@ -96,6 +96,7 @@
 .seopart {
 	padding-top: 80px;
 	position: relative;
+	overflow: hidden;
 }
 
 .seopart .title {

@@ -1,11 +1,11 @@
 $(function() {
 	$('.header .dropdown-menu .dropdown-menu-wrap').width($('.header .dropdown-menu .dropdown-menu-wrap>div').length *
 		235 + ($('.header .dropdown-menu .dropdown-menu-wrap>div').length - 1) * 140);
-	$('.dropdown-menu').hover(function() {
-		event.stopPropagation();
-		$('.header .dropdown-menu .dropdown-menu-wrap').slideDown(300);
-	},function(){
-			$('.header .dropdown-menu .dropdown-menu-wrap').slideUp(300);
+	$('.dropdown-menu').hover(function(e) {
+		e.stopPropagation();
+		$('.header .dropdown-menu .dropdown-menu-wrap').stop().slideDown(300);
+	},function(e){e.stopPropagation();
+			$('.header .dropdown-menu .dropdown-menu-wrap').stop().slideUp(300);
 	});
 	$(document).click(function(event) {
 		var _con = $('.header .dropdown-menu'); // 设置目标区域
